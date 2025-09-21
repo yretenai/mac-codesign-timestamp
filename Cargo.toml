@@ -1,0 +1,13 @@
+[package]
+name = "mac-codesign-timestamp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "0", default-features = false }
+cryptographic-message-syntax = { version = "0", default-features = false }
+goblin = { version = "0", default-features = false, features = ["std", "mach32", "mach64"] }
+plist = "0"
+scroll = "0"
+serde = { version = "1", features = ["derive"] }
