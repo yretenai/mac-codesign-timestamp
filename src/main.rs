@@ -152,5 +152,5 @@ fn process_macho_code_signature(bytes: &[u8]) -> anyhow::Result<DateTime<Utc>> {
         }
     }
 
-    Err(anyhow!("no signature found"))
+    Err(anyhow!("no signature time found"))
 }
